@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animatedConstraints" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wb-VH-gqV">
+                                <rect key="frame" x="29" y="502" width="262" height="46"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.58431372550000005" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="26z-23-vXc"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="46" id="3ZU-rS-QxF"/>
+                                    <constraint firstAttribute="width" constant="262" id="YQs-oR-VEG"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="UpDown">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.33830128209999999" green="0.33830128209999999" blue="0.33830128209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="26z-23-vXc"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="moveConstraints:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sey-Rv-wld"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84p-Rc-lVb">
+                                <rect key="frame" x="29" y="421" width="50" height="44"/>
+                                <color key="backgroundColor" red="0.8078432083" green="0.35355706190000002" blue="0.3584613465" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4Wp-sx-ID1"/>
+                                    <constraint firstAttribute="width" constant="50" id="YGk-3y-GlI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="84p-Rc-lVb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="401" id="6FV-VB-D98"/>
+                            <constraint firstItem="9wb-VH-gqV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="80c-9o-DT2"/>
+                            <constraint firstItem="84p-Rc-lVb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="RUh-cR-Cq0"/>
+                            <constraint firstItem="9wb-VH-gqV" firstAttribute="top" secondItem="84p-Rc-lVb" secondAttribute="bottom" constant="37" id="mbO-2y-5ld"/>
+                            <constraint firstItem="84p-Rc-lVb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="13" id="nhD-Hp-csN"/>
+                            <constraint firstAttribute="bottom" secondItem="9wb-VH-gqV" secondAttribute="bottom" constant="20" symbolic="YES" id="r7c-Mb-Ru7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nhD-Hp-csN"/>
+                                <exclude reference="r7c-Mb-Ru7"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="boxToTop" destination="6FV-VB-D98" id="nWk-WG-rW4"/>
+                        <outlet property="downToButton" destination="mbO-2y-5ld" id="LkV-lj-Kef"/>
+                        <outlet property="leftSpace" destination="RUh-cR-Cq0" id="idw-gV-GSE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="292"/>
         </scene>
     </scenes>
 </document>
