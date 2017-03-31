@@ -194,15 +194,18 @@
 					4146813C1C705F0300200A85 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 798AZH6TJR;
+						LastSwiftMigration = 0820;
 					};
 					414681501C705F0400200A85 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 798AZH6TJR;
+						LastSwiftMigration = 0820;
 						TestTargetID = 4146813C1C705F0300200A85;
 					};
 					4146815B1C705F0400200A85 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 798AZH6TJR;
+						LastSwiftMigration = 0820;
 						TestTargetID = 4146813C1C705F0300200A85;
 					};
 				};
@@ -406,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = forfun.animatedConstraints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -417,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = forfun.animatedConstraints;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -428,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = forfun.animatedConstraintsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/animatedConstraints.app/animatedConstraints";
 			};
 			name = Debug;
@@ -440,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = forfun.animatedConstraintsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/animatedConstraints.app/animatedConstraints";
 			};
 			name = Release;
@@ -451,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = forfun.animatedConstraintsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = animatedConstraints;
 				USES_XCTRUNNER = YES;
 			};
@@ -463,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = forfun.animatedConstraintsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = animatedConstraints;
 				USES_XCTRUNNER = YES;
 			};
@@ -487,6 +496,7 @@
 				414681671C705F0400200A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		414681681C705F0400200A85 /* Build configuration list for PBXNativeTarget "animatedConstraintsTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +505,7 @@
 				4146816A1C705F0400200A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4146816B1C705F0400200A85 /* Build configuration list for PBXNativeTarget "animatedConstraintsUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +514,7 @@
 				4146816D1C705F0400200A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var downToButton: NSLayoutConstraint!
     @IBOutlet weak var boxToTop: NSLayoutConstraint!
     @IBOutlet weak var alignLeft: NSLayoutConstraint!
-    @IBAction func moveConstraints(sender: AnyObject) {
+    @IBAction func moveConstraints(_ sender: AnyObject) {
         
         boxToTop.constant = boxToTop.constant - 50
         downToButton.constant += 50
@@ -27,22 +27,22 @@ class ViewController: UIViewController {
             boxToTop.constant += 200
             downToButton.constant -= 200
         }
-        UIView.animateWithDuration(0.5) {
-            self.view.layoutIfNeeded()        }
+        UIView.animate(withDuration: 0.5, animations: {
+            self.view.layoutIfNeeded()        }) 
 
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    override func viewDidAppear(animated: Bool) {
-        var save: CGFloat = boxToTop.constant
+    override func viewDidAppear(_ animated: Bool) {
+        let save: CGFloat = boxToTop.constant
         boxToTop.constant = 0
         while (boxToTop.constant <= save) {
             boxToTop.constant += 40
-            UIView.animateWithDuration(0.5) {
+            UIView.animate(withDuration: 0.5, animations: {
                 self.view.layoutIfNeeded()
-            }
+            }) 
         }
     }
 
